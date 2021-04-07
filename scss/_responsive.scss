@@ -1,0 +1,201 @@
+@include media-md {
+    .menu-btn {
+        visibility: hidden;
+    }
+
+    .nav {
+        visibility: visible;
+
+        .menu-nav {
+            display: block;
+            transform: translateY(0);
+            height: 100%;
+            background: transparent;
+            text-align: right;
+
+            &_item {
+                display: inline;
+                padding-right: 1.5rem;
+            }
+
+            &_link {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .about-bio {
+        font-size: 1.5rem;
+    }
+
+    .projects {
+        &.bio-image {
+            height: 40vh;
+        }
+
+        &-items {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .text-secondary {
+            font-size: 3rem;
+        }
+    }
+
+    .contact-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .home {
+        background: 
+        linear-gradient(
+            to right,
+            rgba($primary-color, 0.9),
+            rgba($primary-color, 0.3)
+        ),
+        url(../img/model-1.jpg) center top 1000px;
+    background-size: cover;
+    }
+}
+
+
+@include media-btw-542-600 {
+    .home {
+        background: 
+            linear-gradient(
+                to right,
+                rgba($primary-color, 0.9),
+                rgba($primary-color, 0.3)
+            ),
+            url(../img/model-1.jpg) center top 800px;
+        background-size: cover;
+    }
+}
+
+@include media-800 {
+    .contact {
+        background: 
+            linear-gradient(
+                to right,
+                rgba($primary-color, 0.9),
+                rgba($primary-color, 0.3)
+            ),
+            url(../img/model-1.jpg) center top 1000px;
+        background-size: cover;
+    }
+
+    .home-name {
+        border-bottom: 0;
+    }
+
+    .home > .hr {
+
+        hr {
+            visibility: visible;
+            position: relative;
+            top: 2rem;
+            width: 30%;
+            border-style: none;
+            border-top-style: solid;
+            border-color: set-text-color($primary-color);
+            border-width: 2px;
+            margin: 0 auto;
+        }
+    }
+    
+}
+
+
+
+@include media-590 {
+    .contact {
+        background: 
+            linear-gradient(
+                to right,
+                rgba($primary-color, 0.9),
+                rgba($primary-color, 0.3)
+            ),
+            url(../img/model-1.jpg) center top 1000px;
+        background-size: cover;
+    }
+
+    .about-bio-image, .projects-bio-image {
+        background: 
+            linear-gradient(
+                to right,
+                rgba($primary-color, 0.9),
+                rgba($primary-color, 0.3)
+            ),
+            url(../img/model-1.jpg) center top -500px;
+        background-size: cover;
+    }
+    
+}
+
+@include media-lg {
+    .projects {
+
+        &-items {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    .contact {
+        background: 
+            linear-gradient(
+                to right,
+                rgba($primary-color, 0.9),
+                rgba($primary-color, 0.3)
+            ),
+            url(../img/model-1.jpg) center top;
+        background-size: auto;
+    }
+
+    .contact-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .home {
+        background: 
+            linear-gradient(
+                to right,
+                rgba($primary-color, 0.9),
+                rgba($primary-color, 0.3)
+            ),
+            url(../img/model-1.jpg) center top 100rem;
+        background-size: auto;
+    }
+}
+
+@include media-xl {
+    .projects-bio-image {
+        height: 50vh;
+    }
+}
+
+@include media-800-1024 {
+    .home {
+        background: 
+            linear-gradient(
+                to right,
+                rgba($primary-color, 0.9),
+                rgba($primary-color, 0.3)
+            ),
+            url(../img/model-1.jpg) center top 100rem;
+        background-size: auto;
+    }
+}
+
+@include media-md {
+    .about-bio-image, .projects-bio-image {
+        background: 
+            linear-gradient(
+                to right,
+                rgba($primary-color, 0.9),
+                rgba($primary-color, 0.3)
+            ),
+            url(../img/model-1.jpg) center top 500px;
+        background-size: auto;
+    }
+}
