@@ -52,9 +52,3 @@ $secondary-color: #ff652f;
         @content;
     }
 }
-
-@mixin media-800-1024 {
-    @media screen and (min-width:800px) and (max-width:1024px) {
-        @content;
-    }
-}

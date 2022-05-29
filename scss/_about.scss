@@ -4,7 +4,7 @@
     &-bio-image {
         height: 50vh;
         width: 100%;
-        background: 
+        background:
             linear-gradient(
                 to right,
                 rgba($primary-color, 0.9),
@@ -56,11 +56,5 @@
     .social-icons {
         display: flex;
         flex-direction: column;
-    }
-
-    footer {
-        transform: 
-        rotate(90deg)
-        translate(-3rem, -5rem);
     }
 }

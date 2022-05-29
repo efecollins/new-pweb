@@ -4,14 +4,17 @@
     overflow: hidden;
     align-items: center;
     text-align: center;
-    background: 
+    background:
         linear-gradient(
             to right,
             rgba($primary-color, 0.9),
             rgba($primary-color, 0.3)
         ),
-        url(../img/model-1.jpg) center top -1000px;
-    background-size: cover;
+        url(../img/model-1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    background-blend-mode: soft-light;
 
     &-name {
         font-size: 4rem;
@@ -24,7 +27,7 @@
             font-weight: 700;
         }
     }
-    
+
     hr {
         visibility: hidden;
     }

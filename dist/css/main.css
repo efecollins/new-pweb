@@ -13,9 +13,12 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url(../img/model-1.jpg) center top -1000px;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url(../img/model-1.jpg) center top -1000px;
-  background-size: cover;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url(../img/model-1.jpg);
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url(../img/model-1.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  background-blend-mode: soft-light;
 }
 
 .home-name {
@@ -266,11 +269,6 @@
           flex-direction: column;
 }
 
-.about footer {
-  -webkit-transform: rotate(90deg) translate(-3rem, -5rem);
-          transform: rotate(90deg) translate(-3rem, -5rem);
-}
-
 .projects {
   padding-bottom: 2rem;
 }
@@ -381,11 +379,6 @@
           flex-direction: column;
 }
 
-.projects footer {
-  -webkit-transform: rotate(90deg) translate(-3rem, -5rem);
-          transform: rotate(90deg) translate(-3rem, -5rem);
-}
-
 .contact {
   height: 100%;
   padding-top: 40vh;
@@ -468,19 +461,6 @@
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
-  .home {
-    background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url(../img/model-1.jpg) center top 1000px;
-    background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url(../img/model-1.jpg) center top 1000px;
-    background-size: cover;
-  }
-}
-
-@media screen and (min-width: 542px) and (min-width: 600px) {
-  .home {
-    background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url(../img/model-1.jpg) center top 800px;
-    background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url(../img/model-1.jpg) center top 800px;
-    background-size: cover;
-  }
 }
 
 @media screen and (min-width: 800px) {
@@ -532,24 +512,11 @@
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
   }
-  .home {
-    background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url(../img/model-1.jpg) center top 100rem;
-    background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url(../img/model-1.jpg) center top 100rem;
-    background-size: auto;
-  }
 }
 
 @media screen and (min-width: 1600px) {
   .projects-bio-image {
     height: 50vh;
-  }
-}
-
-@media screen and (min-width: 800px) and (max-width: 1024px) {
-  .home {
-    background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url(../img/model-1.jpg) center top 100rem;
-    background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url(../img/model-1.jpg) center top 100rem;
-    background-size: auto;
   }
 }
 
@@ -608,15 +575,5 @@ main .social-icons a {
 
 main .social-icons a:hover {
   color: #ff652f;
-}
-
-footer {
-  font-size: 1rem;
-  padding: 1rem;
-  color: #fff;
-  position: fixed;
-  bottom: 0.4rem;
-  right: 1rem;
-  text-align: right;
 }
 /*# sourceMappingURL=main.css.map */

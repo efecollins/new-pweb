@@ -45,37 +45,11 @@
     .contact-list {
         grid-template-columns: repeat(2, 1fr);
     }
-
-
-    .home {
-        background: 
-        linear-gradient(
-            to right,
-            rgba($primary-color, 0.9),
-            rgba($primary-color, 0.3)
-        ),
-        url(../img/model-1.jpg) center top 1000px;
-    background-size: cover;
-    }
-}
-
-
-@include media-btw-542-600 {
-    .home {
-        background: 
-            linear-gradient(
-                to right,
-                rgba($primary-color, 0.9),
-                rgba($primary-color, 0.3)
-            ),
-            url(../img/model-1.jpg) center top 800px;
-        background-size: cover;
-    }
 }
 
 @include media-800 {
     .contact {
-        background: 
+        background:
             linear-gradient(
                 to right,
                 rgba($primary-color, 0.9),
@@ -103,14 +77,14 @@
             margin: 0 auto;
         }
     }
-    
+
 }
 
 
 
 @include media-590 {
     .contact {
-        background: 
+        background:
             linear-gradient(
                 to right,
                 rgba($primary-color, 0.9),
@@ -121,7 +95,7 @@
     }
 
     .about-bio-image, .projects-bio-image {
-        background: 
+        background:
             linear-gradient(
                 to right,
                 rgba($primary-color, 0.9),
@@ -130,7 +104,7 @@
             url(../img/model-1.jpg) center top -500px;
         background-size: cover;
     }
-    
+
 }
 
 @include media-lg {
@@ -142,7 +116,7 @@
     }
 
     .contact {
-        background: 
+        background:
             linear-gradient(
                 to right,
                 rgba($primary-color, 0.9),
@@ -155,17 +129,6 @@
     .contact-list {
         grid-template-columns: repeat(3, 1fr);
     }
-
-    .home {
-        background: 
-            linear-gradient(
-                to right,
-                rgba($primary-color, 0.9),
-                rgba($primary-color, 0.3)
-            ),
-            url(../img/model-1.jpg) center top 100rem;
-        background-size: auto;
-    }
 }
 
 @include media-xl {
@@ -174,22 +137,9 @@
     }
 }
 
-@include media-800-1024 {
-    .home {
-        background: 
-            linear-gradient(
-                to right,
-                rgba($primary-color, 0.9),
-                rgba($primary-color, 0.3)
-            ),
-            url(../img/model-1.jpg) center top 100rem;
-        background-size: auto;
-    }
-}
-
 @include media-md {
     .about-bio-image, .projects-bio-image {
-        background: 
+        background:
             linear-gradient(
                 to right,
                 rgba($primary-color, 0.9),
