@@ -29,6 +29,14 @@
         font-size: 1.5rem;
     }
 
+    &-email, &-phone, &-address {
+        color: $secondary-color;
+
+        .text {
+            color: #ffffff;
+        }
+    }
+
     .social-icons {
         position: initial;
         margin-top: 2rem;

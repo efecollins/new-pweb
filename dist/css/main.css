@@ -430,6 +430,14 @@
   font-size: 1.5rem;
 }
 
+.contact-email, .contact-phone, .contact-address {
+  color: #ff652f;
+}
+
+.contact-email .text, .contact-phone .text, .contact-address .text {
+  color: #ffffff;
+}
+
 .contact .social-icons {
   position: initial;
   margin-top: 2rem;
