@@ -56,10 +56,9 @@
     .home > .hr {
 
         hr {
-            visibility: visible;
             position: relative;
             top: 2rem;
-            width: 17%;
+            width: 41%;
             border-style: none;
             border-top-style: solid;
             border-color: set-text-color($primary-color);
@@ -71,6 +70,10 @@
 }
 
 @include media-lg {
+    .home > .hr hr {
+        width: 28%;
+    }
+
     .projects {
 
         &-items {
@@ -84,7 +87,30 @@
 }
 
 @include media-xl {
+    .home > .hr hr {
+        width: 22%;
+    }
+
     .projects-bio-image {
         height: 50vh;
+    }
+}
+
+@include hr_responsive {
+    .home > .hr hr {
+        display: none;
+    }
+}
+
+@include media-414 {
+    .home {
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@include media-375 {
+    .title {
+        color: #0e0103;
     }
 }

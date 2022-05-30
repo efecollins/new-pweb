@@ -494,10 +494,9 @@
     border-bottom: 0;
   }
   .home > .hr hr {
-    visibility: visible;
     position: relative;
     top: 2rem;
-    width: 17%;
+    width: 41%;
     border-style: none;
     border-top-style: solid;
     border-color: #fff;
@@ -507,6 +506,9 @@
 }
 
 @media screen and (min-width: 1024px) {
+  .home > .hr hr {
+    width: 28%;
+  }
   .projects-items {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
@@ -518,8 +520,30 @@
 }
 
 @media screen and (min-width: 1600px) {
+  .home > .hr hr {
+    width: 22%;
+  }
   .projects-bio-image {
     height: 50vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home > .hr hr {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .home {
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .title {
+    color: #0e0103;
   }
 }
 
