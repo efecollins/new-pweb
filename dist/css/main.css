@@ -260,8 +260,21 @@
   margin: 0.5rem 0;
 }
 
+.about .jobs-job h2 {
+  font-size: 1rem;
+}
+
+.about .jobs-job h3 {
+  text-transform: uppercase;
+}
+
 .about .jobs-job h6 {
-  margin: 0.3rem 0;
+  margin: .3rem 0 1rem;
+}
+
+.about .jobs-job ul {
+  list-style-type: none;
+  line-height: 1.5;
 }
 
 .about .social-icons {
