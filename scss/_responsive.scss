@@ -100,6 +100,10 @@
     .home > .hr hr {
         display: none;
     }
+
+    .about .jobs-job ul {
+        font-size: .8rem;
+    }
 }
 
 @include media-414 {
@@ -112,5 +116,23 @@
 @include media-375 {
     .title {
         color: #0e0103;
+    }
+
+    .about .jobs-job h3, .about-bio-image p {
+        font-size: .8rem;
+    }
+
+    .about .jobs-job ul {
+        font-size: .6rem;
+    }
+}
+
+@include about-img-responsive {
+    .about-bio-image {
+        background: none;
+
+        p {
+            padding: 0;
+        }
     }
 }

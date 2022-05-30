@@ -532,6 +532,9 @@
   .home > .hr hr {
     display: none;
   }
+  .about .jobs-job ul {
+    font-size: .8rem;
+  }
 }
 
 @media screen and (max-width: 414px) {
@@ -544,6 +547,21 @@
 @media screen and (max-width: 375px) {
   .title {
     color: #0e0103;
+  }
+  .about .jobs-job h3, .about-bio-image p {
+    font-size: .8rem;
+  }
+  .about .jobs-job ul {
+    font-size: .6rem;
+  }
+}
+
+@media screen and (max-width: 1536px) {
+  .about-bio-image {
+    background: none;
+  }
+  .about-bio-image p {
+    padding: 0;
   }
 }
 

@@ -64,3 +64,9 @@ $secondary-color: #ff652f;
         @content;
     }
 }
+
+@mixin about-img-responsive {
+    @media screen and (max-width: 1536px) {
+        @content;
+    }
+}
