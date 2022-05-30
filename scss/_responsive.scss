@@ -104,6 +104,14 @@
     .about .jobs-job ul {
         font-size: .8rem;
     }
+
+    .contact-email, .contact-phone, .contact-address {
+        color: #ffffff;
+
+        .text {
+            color: $secondary-color;
+        }
+    }
 }
 
 @include media-414 {

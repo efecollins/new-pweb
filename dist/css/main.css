@@ -535,6 +535,12 @@
   .about .jobs-job ul {
     font-size: .8rem;
   }
+  .contact-email, .contact-phone, .contact-address {
+    color: #ffffff;
+  }
+  .contact-email .text, .contact-phone .text, .contact-address .text {
+    color: #ff652f;
+  }
 }
 
 @media screen and (max-width: 414px) {
