@@ -48,16 +48,6 @@
 }
 
 @include media-800 {
-    .contact {
-        background:
-            linear-gradient(
-                to right,
-                rgba($primary-color, 0.9),
-                rgba($primary-color, 0.3)
-            ),
-            url(../img/model-1.jpg) center top 1000px;
-        background-size: cover;
-    }
 
     .home-name {
         border-bottom: 0;
@@ -80,50 +70,12 @@
 
 }
 
-
-
-@include media-590 {
-    .contact {
-        background:
-            linear-gradient(
-                to right,
-                rgba($primary-color, 0.9),
-                rgba($primary-color, 0.3)
-            ),
-            url(../img/model-1.jpg) center top 1000px;
-        background-size: cover;
-    }
-
-    .about-bio-image, .projects-bio-image {
-        background:
-            linear-gradient(
-                to right,
-                rgba($primary-color, 0.9),
-                rgba($primary-color, 0.3)
-            ),
-            url(../img/model-1.jpg) center top -500px;
-        background-size: cover;
-    }
-
-}
-
 @include media-lg {
     .projects {
 
         &-items {
             grid-template-columns: repeat(3, 1fr);
         }
-    }
-
-    .contact {
-        background:
-            linear-gradient(
-                to right,
-                rgba($primary-color, 0.9),
-                rgba($primary-color, 0.3)
-            ),
-            url(../img/model-1.jpg) center top;
-        background-size: auto;
     }
 
     .contact-list {
@@ -134,18 +86,5 @@
 @include media-xl {
     .projects-bio-image {
         height: 50vh;
-    }
-}
-
-@include media-md {
-    .about-bio-image, .projects-bio-image {
-        background:
-            linear-gradient(
-                to right,
-                rgba($primary-color, 0.9),
-                rgba($primary-color, 0.3)
-            ),
-            url(../img/model-1.jpg) center top 500px;
-        background-size: auto;
     }
 }

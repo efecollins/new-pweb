@@ -204,9 +204,12 @@
 .about-bio-image {
   height: 50vh;
   width: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url(../img/model-1.jpg) center top 500px;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url(../img/model-1.jpg) center top 500px;
-  background-size: cover;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url(../img/model-1.jpg);
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url(../img/model-1.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  background-blend-mode: soft-light;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -224,6 +227,8 @@
 
 .about-bio-image p {
   margin-bottom: 2rem;
+  line-height: 1.5;
+  padding: 1% 20%;
 }
 
 .about-bio {
@@ -276,9 +281,6 @@
 .projects-bio-image {
   height: 30vh;
   width: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url(../img/model-1.jpg) center top 500px;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url(../img/model-1.jpg) center top 500px;
-  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -393,9 +395,12 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url(../img/model-1.jpg) center top -1000px;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url(../img/model-1.jpg) center top -1000px;
-  background-size: cover;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url(../img/model-1.jpg);
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url(../img/model-1.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  background-blend-mode: soft-light;
 }
 
 .contact h2 {
@@ -464,11 +469,6 @@
 }
 
 @media screen and (min-width: 800px) {
-  .contact {
-    background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url(../img/model-1.jpg) center top 1000px;
-    background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url(../img/model-1.jpg) center top 1000px;
-    background-size: cover;
-  }
   .home-name {
     border-bottom: 0;
   }
@@ -485,28 +485,10 @@
   }
 }
 
-@media screen and (min-width: 590px) {
-  .contact {
-    background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url(../img/model-1.jpg) center top 1000px;
-    background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url(../img/model-1.jpg) center top 1000px;
-    background-size: cover;
-  }
-  .about-bio-image, .projects-bio-image {
-    background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url(../img/model-1.jpg) center top -500px;
-    background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url(../img/model-1.jpg) center top -500px;
-    background-size: cover;
-  }
-}
-
 @media screen and (min-width: 1024px) {
   .projects-items {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
-  }
-  .contact {
-    background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url(../img/model-1.jpg) center top;
-    background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url(../img/model-1.jpg) center top;
-    background-size: auto;
   }
   .contact-list {
     -ms-grid-columns: (1fr)[3];
@@ -517,14 +499,6 @@
 @media screen and (min-width: 1600px) {
   .projects-bio-image {
     height: 50vh;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .about-bio-image, .projects-bio-image {
-    background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url(../img/model-1.jpg) center top 500px;
-    background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url(../img/model-1.jpg) center top 500px;
-    background-size: auto;
   }
 }
 
